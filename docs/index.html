@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Ces Propiedades</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
+<link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/camera.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+$(document).ready(function() {
+	//
+	$('#camera_wrap').camera({
+		//thumbnails: true
+		//alignment			: 'centerRight', 
+		autoAdvance			: true,		
+		mobileAutoAdvance	: true,
+		//fx					: 'simpleFade',
+		height: '48%',
+		hover: false,
+		loader: 'none',
+		navigation: false,
+		navigationHover: false,
+		mobileNavHover: false,
+		playPause: false,
+		pauseOnClick: false,
+		pagination			: true,
+		time: 7000,
+		transPeriod: 1000,
+		minHeight: '300px'
+	});
+
+	//	carouFredSel
+	$('#slider3 .carousel.main ul').carouFredSel({
+		auto: {
+			timeoutDuration: 8000					
+		},
+		responsive: true,
+		prev: '.prev3',
+		next: '.next3',
+		width: '100%',
+		scroll: {
+			items: 1,
+			duration: 1000,
+			easing: "easeOutExpo"
+		},			
+		items: {
+        	width: '330',
+			height: 'variable',	//	optionally resize item-height			  
+			visible: {
+				min: 1,
+				max: 4
+			}
+		},
+		mousewheel: false,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			}
+	}); 
+
+	
+
+
+	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
+	function updateSizes_vat(){		
+		$('#slider3 .carousel.main ul').trigger("updateSizes");		
+	}
+	updateSizes_vat();
+
+
+
+}); //
+$(window).load(function() {
+	//
+
+}); //
+</script>		
+<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>  
+	<![endif]-->    
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>      
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+
+<body class="front">
+<div id="main">
+
+<div class="top1_wrapper">
+<div class="top1 clearfix">
+	
+<header><div class="logo_wrapper"><a href="index.html" class="logo"><img src="images/logo-prueba.jpeg" alt=""></a></div></header>
+
+<div class="menu_wrapper clearfix">
+<div class="navbar navbar_">
+	<div class="navbar-inner navbar-inner_">
+		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+		<div class="nav-collapse nav-collapse_ collapse">
+			<ul class="nav sf-menu clearfix">
+<li class="active"><a href="index.html">Inicio</a></li>
+<li class="sub-menu sub-menu-1"><a href="acerca.html">Acerca de</a>
+	<!-- <ul>
+		<li><a href="index-1.html">who we are</a></li>
+		<li class="sub-menu sub-menu-2"><a href="index-1.html">find an agent<em></em></a>
+			<ul>
+				<li><a href="index-1.html">Lorem ipsum dolor</a></li>
+				<li><a href="index-1.html">Sit amet</a></li>
+				<li><a href="index-1.html">Adipiscing elit</a></li>
+				<li><a href="index-1.html">Nunc suscipit</a></li>
+				<li><a href="404.html">404 page not found</a></li>
+			</ul>
+		</li>
+		<li class="sub-menu sub-menu-2"><a href="index-1.html">history<em></em></a>
+			<ul>
+				<li><a href="index-1.html">Lorem ipsum dolor</a></li>
+				<li><a href="index-1.html">Sit amet</a></li>
+				<li><a href="index-1.html">Adipiscing elit</a></li>
+				<li><a href="index-1.html">Nunc suscipit</a></li>
+				<li><a href="404.html">404 page not found</a></li>
+			</ul>
+		</li>		
+		<li><a href="index-1.html">testimonials</a></li>						
+	</ul>						 -->
+</li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="ventas.html">Ventas</a></li>
+<li><a href="alquileres.html">Alquileres</a></li>											
+<!-- <li><a href="index-5.html">gallery</a></li>											 -->
+<li><a href="contacto.html">Contacto</a></li>											
+    </ul>
+		</div>
+	</div>
+</div>
+<div id="search">
+	
+<a href="#" class="searchBtn"></a>
+
+<div class="search-form-wrapper">
+<form id="search-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form" >
+	<input type="text" name="s" value='Buscar' onBlur="if(this.value=='') this.value='Search'" onFocus="if(this.value =='Search' ) this.value=''">
+	<a href="#" onClick="document.getElementById('search-form').submit()"></a>
+</form>	
+</div>
+
+</div>	
+</div>
+
+</div>	
+</div>
+
+<div id="inner">
+
+<div class="find_wrapper">
+
+<div class="find_inner">
+<div class="find">
+	
+<div class="txt1">Bienvenidos a</div>
+
+<div class="txt2">CES</div>
+
+<div class="txt3">Propiedades</div>
+
+<div class="line"></div>
+
+<div class="txt4">El camino hacia tu lugar</div>
+
+<!-- <div class="find-form-wrapper clearfix">
+  <form id="find-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form clearfix" >
+    <input type="text" name="s" value='Buscar' onBlur="if(this.value=='') this.value='keyword'" onFocus="if(this.value =='keyword' ) this.value=''">
+    <a href="#" onClick="document.getElementById('find-form').submit()"></a>
+  </form>
+</div> -->
+
+
+</div>	
+</div>
+
+<div id="slider_wrapper">
+	<div id="slider" class="clearfix">
+		<div id="camera_wrap">
+			<div data-src="images/sanjuan-noche-catedral.jpeg"></div>
+			<div data-src="images/sanjuan-ischigualasto.jpeg"></div>													
+			<div data-src="images/sanjuan-civico4.jpeg"></div>
+			<div data-src="images/sanjuan-civico5.jpeg"></div>
+			<div data-src="images/sanjuan-plaza25-noche.jpeg"></div>
+		</div>	
+	</div>		
+</div>	
+</div>	
+
+<br>
+<br>
+<br>
+
+
+<div id="slider3_wrapper">
+	<div class="container">
+	<div class="slider3_title"><span>ENCONTRÁ TU MEJOR OPCIÓN</span></div>	
+
+<div class="site-section site-section-sm pb-0">
+	<div class="container">
+	  <div class="row">
+
+		<form class="form-search col-md-12" style="padding: 50px; width: 500px; margin: auto;">
+		  <div class="row  align-items-end">
+
+			<div class="col-md-3">
+			  <label for="list-types">Tipo de Inmueble</label>
+			  <div class="select-wrap">
+				<span></span>
+				<select name="list-types" id="list-types" class="form-control d-block rounded-0">
+					<option value="">Todos los tipos</option>
+				  	<option value="">Casas</option>
+				  	<option value="">Departamentos</option>
+				  	<option value="">Cocheras</option>
+				  	<option value="">Fincas</option>
+				  	<option value="">Llaves de negocios</option>
+				  	<option value="">Lotes</option>
+				</select>
+			  </div>
+			</div>
+<br>
+			<div class="col-md-3">
+			  <label for="offer-types">Tipo de Operación</label>
+			  <div class="select-wrap">
+				<span></span>
+				<select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
+					<option value="">Todos los tipos</option>
+					<option value="">Venta</option>
+				  	<option value="">Alquiler</option>
+				</select>
+			  </div>
+			</div>
+<br>
+			<div class="col-md-3">
+			  <label for="select-city">Zona</label>
+			  <div class="select-wrap">
+				<span></span>
+				<select name="select-city" id="select-city" class="form-control d-block rounded-0">
+					<option value="">Todas las zonas</option>
+					<option value="">25 de Mayo</option>
+				 	 <option value="">9 de Julio</option>
+				  	<option value="">Albardón</option>
+				  	<option value="">Angaco</option>
+				  	<option value="">Calingasta</option>
+				  	<option value="">Capital</option>
+				  	<option value="">Caucete</option>
+				  	<option value="">Chimbas</option>
+				  	<option value="">Iglesia</option>
+				  	<option value="">Jáchal</option>
+				  	<option value="">Pocito</option>
+				  	<option value="">Rawson</option>
+				  	<option value="">Rivadavia</option>
+				  	<option value="">San Martín</option>
+				  	<option value="">Santa Lucía</option>
+				  	<option value="">Sarmiento</option>
+				  	<option value="">Ullúm</option>
+				  	<option value="">Valle Fértil</option>
+				  	<option value="">Zonda</option>
+				</select>
+			  </div>
+			</div>
+<br>
+<br>
+			<div class="col-md-3">
+			  <input type="submit" class="btn btn-success text-white btn-block rounded-0" value="Buscar">
+			</div>
+			
+		  </div>
+		</form>
+	  </div>  
+
+	  <!-- <div class="row">
+		<div class="col-md-12">
+		  <div class="view-options bg-white py-3 px-3 d-md-flex align-items-center">
+			<div class="mr-auto">
+			  <a href="index.html" class="icon-view view-module active"><span class="icon-view_module"></span></a>
+			  <a href="view-list.html" class="icon-view view-list"><span class="icon-view_list"></span></a>         
+			</div>
+			
+			<div class="ml-auto d-flex align-items-center">
+			  <div>
+				<a href="#" class="view-list px-3 border-right active">Todos</a>
+				<a href="#" class="view-list px-3 border-right">Alquiler</a>
+				<a href="#" class="view-list px-3">Venta</a>
+			  </div>
+
+
+			  <div class="select-wrap">
+				<span class="icon icon-arrow_drop_down"></span>
+				<select class="form-control form-control-sm d-block rounded-0">
+				  <option value="">Ordenar por</option>
+				  <option value="">Precio Ascendente</option>
+				  <option value="">Precio Descendente</option>
+				</select>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div> -->
+	 
+	</div>
+  </div>  
+
+
+<!-- <div class="banners">
+<div class="container">
+<div class="row">
+<div class="span4 banner banner1">
+<div class="banner_inner">
+<a href="#">	
+<div class="caption">
+<div class="txt1">ADVANTAGES</div>
+<div class="txt2">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ...</div>
+<div class="txt3">more</div>	
+</div>
+</a>	
+</div>	
+</div>
+<div class="span4 banner banner2">
+<div class="banner_inner">
+<a href="#">	
+<div class="caption">
+<div class="txt1">MISSION</div>
+<div class="txt2">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ...</div>
+<div class="txt3">more</div>	
+</div>
+</a>	
+</div>	
+</div>
+<div class="span4 banner banner3">
+<div class="banner_inner">
+<a href="#">	
+<div class="caption">
+<div class="txt1">vision</div>
+<div class="txt2">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ...</div>
+<div class="txt3">more</div>	
+</div>
+</a>	
+</div>	
+</div>	
+</div>	
+</div>	
+</div> -->
+<br>
+<br>
+<br>
+
+<div id="slider3_wrapper">
+<div class="container">
+
+<div class="slider3_title"><span>ÚLTIMAS OFERTAS</span></div>	
+
+<div id="slider3">
+<a class="prev3" href="#"></a>
+<a class="next3" href="#"></a>		
+<div class="carousel-box row">
+	<div class="inner span12">			
+		<div class="carousel main">
+			<ul>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/casa1.jpeg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">SALÓN COMERCIAL - ALQUILER</div>
+									<div class="txt2">Rawson. Esquina, excelente ubicación. Ideal para comercio de varios rubros.</div>
+									<div class="txt3">$70.000</div>
+									<div class="txt4">Detalles</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/casa2.jpeg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">VIVIENDA - VENTA</div>
+									<div class="txt2">Pocito. Vivienda unifamiliar con 2 dormitorios y 1 baño en zona rural.</div>
+									<div class="txt3">USD 80.000</div>
+									<div class="txt4">Detalles</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/casa3.jpeg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">VIVIENDA - ALQUILER</div>
+									<div class="txt2">Capital. Alquiler de un departamento interno de 45 m2. Ideal para viajantes.</div>
+									<div class="txt3">$30.000</div>
+									<div class="txt4">Detalles</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/casa4.jpeg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">SALÓN COMERCIAL - VENTA</div>
+									<div class="txt2">Rivadavia. Excelente ubicación y muy transitada. Todos los servicios. Solo se vende.</div>
+									<div class="txt3">USD100.000</div>
+									<div class="txt4">Detalles</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/casa5.jpeg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">TERRENO - VENTA</div>
+									<div class="txt2">Albardón. Terreno de 18 hectáreas ideal para lotear. No se vende parcelado.</div>
+									<div class="txt3">$14.000.000</div>
+									<div class="txt4">Detalles</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/casa6.jpeg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">DEPARTAMENTO - ALQUILER</div>
+									<div class="txt2">Rivadavia. Departamento en Barrio Aramburu. 2 habitaciones y 2 baños. Cerca de la policía.</div>
+									<div class="txt3">$29.000</div>
+									<div class="txt4">Detalles</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>																									
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+
+</div>	
+</div>
+
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span9">
+	
+<h2><span>¿Cómo trabajamos?</span></h2>
+
+<div class="row">
+<div class="span3">
+
+<div class="work1 clearfix">
+	<div class="txt1">1</div>
+	<div class="txt2">Generamos<br>contacto</div>
+</div>	
+
+<p align="justify">
+	Desde Ces Propiedades generamos el contacto entre el oferente y el 
+	cliente. De esta manera intercedemos para que el negocio se pueda llevar 
+	a cabo de la mejor forma. Nuestro grupo de profesionales capacitados 
+	para enfrentarse a cualquier situación, para bienestar y comodidad de 
+	las partes.
+</p>
+
+<!-- <a href="#" class="button1">Read more</a> -->
+
+
+
+</div>
+<div class="span3">
+
+<div class="work1 clearfix">
+	<div class="txt1">2</div>
+	<div class="txt2">Facilitamos<br>la tramitación</div>
+</div>	
+
+<p align="justify">
+	Como Corredor Inmobiliario, y con un gran grupo de trabajo, facilitamos 
+	al oferente y al cliente todos los conocimientos del sector para que el 
+	proceso de trámites se transite de manera tranquila, poniendo profesionales 
+	a disposición de las partes y atendiendo dudas y consultas de forma 
+	personalizada.
+</p>
+
+<!-- <a href="#" class="button1">Read more</a> -->
+
+
+
+</div>
+<div class="span3">
+
+<div class="work1 clearfix">
+	<div class="txt1">3</div>
+	<div class="txt2">Acompañamos en<br>todo momento</div>
+</div>	
+
+<p align="justify">
+	Nuestros profesionales atienden cada situación de forma personalizada, 
+	brindando a los oferentes y a los clientes la tranquilidad de estar 
+	acompañando cada caso. Las dudas y consultas serán 
+	atendida con el profesionalismo que nos destaca hasta que el negocio 
+	se lleve a cabo, beneficiando a ambas partes
+</p>
+
+<!-- <a href="#" class="button1">Read more</a> -->
+
+
+
+</div>	
+</div>
+
+</div>
+<div class="span3">
+	
+<h2><span>Nuestro equipo profesional</span></h2>
+
+<ul class="ul1">
+	<li><a href="#">Asesoría profesional</a></li>
+	<li><a href="#">Gestión inmobiliaria</a></li>
+	<li><a href="#">Mediación</a></li>
+	<li><a href="#">Transacciones en compra y venta</a></li>
+	<li><a href="#">Comunicación fluida</a></li>
+	<li><a href="#">Gestión bancaia</a></li>
+	<li><a href="#">Visitas previas</a></li>
+	<li><a href="#">Fotografía y publicación</a></li>
+</ul>
+
+</div>
+
+<div class="span8">
+	
+	<h2><span>Escaneá el Código QR y agendanos</span></h2>
+<img style="margin-left: 30%;" src="images/qr-code.jpeg" alt="">
+</div>
+</div>	
+
+</div>	
+</div>
+
+<div class="bot1_wrapper">
+<div class="container">
+<div class="bot1 clearfix">
+<div class="row">
+<div class="span3">
+
+<div class="bot1_title">Ces Propiedades</div>	
+	
+<div class="logo2_wrapper"><a href="index.html" class="logo2"><img src="images/logo-prueba.jpeg" alt=""></a></div>
+
+	<footer><div class="copyright">Ces Propiedades © 2022 <br>Todos los Derechos Reservados.</a></div></footer>
+
+</div>	
+<div class="span4">
+
+<div class="bot1_title">Información Útil</div>
+
+<p>
+	<b>
+		Todas las fotos publicadas en este portal fueron acordadas y están autorizadas por los oferentes y/o dueños del inmueble.
+	</b>
+</p>
+
+<p>
+	Ces Propiedades no edita fotos y tampoco se responsabiliza por la posible diferencia con la realidad, ya que en las fotos no se puede verificar a fondo el estado de un inmueble.
+</p>
+
+</div>
+<div class="span3 offset1">
+
+<div class="bot1_title">Seguinos en las Redes</div>
+	
+<div class="social_wrapper">
+	<ul class="social clearfix">    
+    <li><a href="#"><img src="images/social_ic1.png"></a></li>
+    <!-- <li><a href="#"><img src="images/social_ic2.png"></a></li> -->
+    <li><a href="#"><img src="images/social_ic3.png"></a></li>
+    <!-- <li><a href="#"><img src="images/social_ic4.png"></a></li> -->
+    <li><a href="#"><img src="images/social_ic5.png"></a></li>
+    <li><a href="#"><img src="images/social_ic6.png"></a></li>
+	</ul>
+</div>
+
+</div>
+</div>	
+</div>	
+</div>	
+</div>
+
+</div>	
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
