@@ -25,7 +25,7 @@ body{ background: #efefef; border:0; font: 12px Arial, Helvetica, sans-serif; co
 
 .find_inner{position: absolute; left: 50%; margin-left: -220px; top: 50%; margin-top: -201px; z-index: 2;}
 
-.find{position: relative;background: url(../images/find_px.png); border: 24px solid #fff; padding: 40px; text-align: center; width: 312px;}
+.find{position: relative;background: url(../images/find_px.png); border: 24px solid #fff; padding: 40px; text-align: center; width: 390px;}
 .find .txt1{font-family: 'Open Sans'; font-size: 14px; line-height: 20px; color: #fff; font-weight: 300; text-transform: uppercase; letter-spacing: 2px;}
 .find .txt2{font-family: 'Open Sans'; font-size: 42px; line-height: 40px; color: #fff; font-weight: 800; text-transform: uppercase; letter-spacing: 0px; padding-top: 10px;}
 .find .txt3{font-family: 'Open Sans'; font-size: 42px; line-height: 40px; color: #fff; font-weight: 300; text-transform: uppercase; letter-spacing: 2px; padding-top: 10px;}
